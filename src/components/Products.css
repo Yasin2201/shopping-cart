@@ -1,0 +1,12 @@
+#productsDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    text-align: center;
+    width: 400px;
+    margin: 10px;
+    border: solid 2px red;
+}

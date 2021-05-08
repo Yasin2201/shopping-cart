@@ -1,9 +1,15 @@
 #navbar {
     display: flex;
+    align-items: center;
+    padding: 10px;
+    border: solid 2px black;
+    height: 100px;
 }
+
 
 #linkList {
     display: flex;
+    align-items: center;
     list-style: none;
 }
 
