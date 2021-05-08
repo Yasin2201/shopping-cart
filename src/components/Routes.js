@@ -9,8 +9,8 @@ import Cart from "./Cart"
 const Routes = () => {
     return (
         <div>
-            <Navbar />
             <BrowserRouter>
+                <Navbar />
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/store" component={Store} />
