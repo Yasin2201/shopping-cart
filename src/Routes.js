@@ -1,9 +1,9 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from "react-router-dom"
-import Navbar from "./Navbar"
-import Home from "./Home"
-import Store from "./Store"
-import Cart from "./Cart"
+import Navbar from "./components/Navbar"
+import Home from "./components/Home"
+import Store from "./components/Store"
+import Cart from "./components/Cart"
 
 
 const Routes = () => {
