@@ -1,6 +1,6 @@
 import './Cart.css'
 
-const Cart = ({ itemCart }) => {
+const Cart = ({ itemCart, removeFromCart }) => {
     return (
         <div >
             <h1>Cart</h1>
@@ -9,6 +9,7 @@ const Cart = ({ itemCart }) => {
                 {itemCart.map((item) => {
                     return (
                         <div key={item.id} className="itemCard">
+                            <button value={item.id} onClick={removeFromCart}>x</button>
                             <img src={item.img} alt={item.name} className="productImage" />
                             <h2>{item.name}</h2>
                             <h3>£{item.price}</h3>
