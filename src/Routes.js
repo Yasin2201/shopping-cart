@@ -22,6 +22,13 @@ const Routes = () => {
         console.log(itemCart)
     }
 
+    const removeFromCart = (e) => {
+        const targetValue = parseInt(e.target.value)
+        const keptItems = itemCart.filter((item) => { return item.id !== targetValue })
+        setItemCart(keptItems)
+    }
+    console.log(itemCart)
+
     return (
         <div>
             <BrowserRouter>
@@ -34,7 +41,7 @@ const Routes = () => {
                         <Store products={products} addToCart={addToCart} />
                     </Route>
                     <Route exact path="/cart" >
-                        <Cart itemCart={itemCart} />
+                        <Cart itemCart={itemCart} removeFromCart={removeFromCart} />
                     </Route>
                 </Switch>
             </BrowserRouter>
