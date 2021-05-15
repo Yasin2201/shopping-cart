@@ -9,17 +9,17 @@ import productData from './components/data/productData'
 
 const Routes = () => {
     const products = productData
-
     const [itemCart, setItemCart] = useState([])
 
     const addToCart = (e) => {
         const targetValue = parseInt(e.target.value)
         const foundItem = products.find((item) => { return item.id === targetValue })
 
-        if (!itemCart.includes(foundItem)) {
+        if (!itemCart.some(e => e.id === foundItem.id)) {
+            foundItem["qty"] = 1
+            foundItem["total"] = foundItem.price
             setItemCart([...itemCart, foundItem])
         }
-        console.log(itemCart)
     }
 
     const removeFromCart = (e) => {
@@ -27,7 +27,24 @@ const Routes = () => {
         const keptItems = itemCart.filter((item) => { return item.id !== targetValue })
         setItemCart(keptItems)
     }
-    console.log(itemCart)
+
+    const getVal = (e) => {
+        let targetValue = parseInt(e.target.value)
+        const targetID = parseInt(e.target.id)
+        setItemCart(
+            itemCart.map((item) => {
+                if (item.id === targetID) {
+                    return {
+                        ...item,
+                        qty: targetValue,
+                        total: parseFloat((targetValue * item.price).toFixed(2))
+                    }
+                } else {
+                    return item
+                }
+            })
+        )
+    }
 
     return (
         <div>
@@ -41,7 +58,7 @@ const Routes = () => {
                         <Store products={products} addToCart={addToCart} />
                     </Route>
                     <Route exact path="/cart" >
-                        <Cart itemCart={itemCart} removeFromCart={removeFromCart} />
+                        <Cart itemCart={itemCart} removeFromCart={removeFromCart} getVal={getVal} />
                     </Route>
                 </Switch>
             </BrowserRouter>
