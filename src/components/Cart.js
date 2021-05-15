@@ -7,7 +7,7 @@ const Cart = ({ itemCart, removeFromCart, getVal }) => {
     return (
         <div >
             <h1>Cart</h1>
-            <h2>Total: {cartTotal.toFixed(2)}</h2>
+            <h2>Total: £{cartTotal.toFixed(2)}</h2>
             <div className="items">
                 {itemCart.map((item) => {
                     return (
