@@ -2,7 +2,7 @@ import "./Navbar.css"
 import { Link } from "react-router-dom"
 
 
-const Navbar = () => {
+const Navbar = ({ itemCart }) => {
     return (
         <div id="navbar">
             <h2>Logo</h2>
@@ -14,7 +14,9 @@ const Navbar = () => {
                     <Link to="/store">Store</Link>
                 </li>
                 <li>
-                    <Link to="/cart">Cart</Link>
+                    <Link to="/cart">
+                        {itemCart.length > 0 ? `Cart (${itemCart.length})` : 'Cart'}
+                    </Link>
                 </li>
             </ul>
         </div>

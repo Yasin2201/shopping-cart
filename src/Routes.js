@@ -49,7 +49,7 @@ const Routes = () => {
     return (
         <div>
             <BrowserRouter>
-                <Navbar />
+                <Navbar itemCart={itemCart} />
                 <Switch>
                     <Route exact path="/" >
                         <Home />
