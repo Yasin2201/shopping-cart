@@ -52,7 +52,7 @@ const Routes = () => {
             <BrowserRouter>
                 <Navbar itemCart={itemCart} />
                 <Switch>
-                    <Route exact path="/" >
+                    <Route exact path="/shopping-cart" >
                         <Home />
                     </Route>
                     <Route exact path="/store">
