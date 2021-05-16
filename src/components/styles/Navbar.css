@@ -1,0 +1,41 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 80px;
+    background-color: rgb(46, 46, 46);
+    box-shadow: 1px 1px 10px black;
+}
+
+#logo {
+    height: 70px;
+    margin: 30px;
+}
+
+#linkList {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(233, 233, 233);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+
+}
+a:active {
+    color: rgb(122, 122, 122);
+}
+
+li {
+    margin: 10px;
+}

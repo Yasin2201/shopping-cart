@@ -1,11 +1,15 @@
-import "./Navbar.css"
+import './styles/Navbar.css'
 import { Link } from "react-router-dom"
+import logo from "../images/logo.png"
 
 
 const Navbar = ({ itemCart }) => {
+    const companyLogo = logo
     return (
         <div id="navbar">
-            <h2>Logo</h2>
+            <div>
+                <img id="logo" src={companyLogo} alt="SneakerShop" />
+            </div>
             <ul id="linkList">
                 <li>
                     <Link to="/">Home</Link>
@@ -19,7 +23,7 @@ const Navbar = ({ itemCart }) => {
                     </Link>
                 </li>
             </ul>
-        </div>
+        </div >
     )
 }
 

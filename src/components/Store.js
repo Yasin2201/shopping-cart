@@ -1,11 +1,10 @@
-import "./Store.css"
+import './styles/Store.css'
 
 
 const Store = ({ products, addToCart }) => {
 
     return (
         <div>
-            <h1>Store</h1>
             <div id="storeDisplay">
                 {products.map((item) => {
                     return (
@@ -14,7 +13,6 @@ const Store = ({ products, addToCart }) => {
                             <h2>{item.name}</h2>
                             <button value={item.id} onClick={addToCart}>Add to cart</button>
                             <h3>£{item.price}</h3>
-                            <p>{item.description}</p>
                         </div>
                     )
                 })}

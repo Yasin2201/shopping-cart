@@ -5,6 +5,7 @@ import Home from "./components/Home"
 import Store from "./components/Store"
 import Cart from "./components/Cart"
 import productData from './components/data/productData'
+import "./components/styles/Routes.css"
 
 
 const Routes = () => {
@@ -47,7 +48,7 @@ const Routes = () => {
     }
 
     return (
-        <div>
+        <div id="mainDiv">
             <BrowserRouter>
                 <Navbar itemCart={itemCart} />
                 <Switch>

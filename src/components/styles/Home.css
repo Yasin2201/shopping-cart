@@ -1,0 +1,22 @@
+#homePage {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color:  rgba(1, 1, 1, 0.5);
+    
+}
+.title {
+    text-align: center;
+    font-size: 10vh;
+    margin: 7%;
+    color: rgb(218, 216, 216);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.infoPara {
+    color: rgb(184, 183, 183);
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
