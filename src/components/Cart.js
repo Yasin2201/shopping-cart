@@ -6,7 +6,6 @@ const Cart = ({ itemCart, removeFromCart, getVal }) => {
 
     const checkout = () => {
         alert("Thanks For Shopping!")
-        window.location.reload();
     }
 
     return (
