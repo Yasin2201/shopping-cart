@@ -1,3 +1,12 @@
+# Shopping Cart Application
+A simple shopping cart application with simple styling.
+
+**Main Objectives:**
+- Familiarise with React Router
+- Further React practice
+- Get used to using React Hooks
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
