@@ -4,6 +4,7 @@
     width: 100%;
     background-color: rgb(235, 233, 233);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: scroll;
 }
 
 .items {
